@@ -1,0 +1,12 @@
+从github clone仓库
+    git clone   xxxx地址
+	git pull 将远程仓库的修改上传到本地仓库
+	
+提交本地仓库中已经commit的数据到github
+	1.本地仓库关联远程自己的github仓库
+		git remote add origin https://github.com/xxxxx/test.git，和远程仓库连接
+	2.代码上传
+	  对于github来说默认的是main，所以这里一般都是上传到main，而不是master
+		git branch -M main
+	3.将本地项目推送到远程仓库
+		git push -u origin main
